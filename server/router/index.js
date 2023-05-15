@@ -11,7 +11,7 @@ router.get('/user/:id', userController.getUser)
 router.post('/reviews', reviewsControllers.createReviews)
 router.put('/reviews/:id', reviewsControllers.updateReviews)
 router.get('/reviews', reviewsControllers.getReviews)
-router.get('/review', reviewsControllers.getReview)
+router.get('/review/:id', reviewsControllers.getReview)
 
 
 

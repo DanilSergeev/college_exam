@@ -1,7 +1,16 @@
+import ReviewsService from "../service/reviews-service"
 
-const Register = () =>{
-    return(
+
+const Register = () => {
+
+    const test = async () => {
+        const rec = await ReviewsService.getReviews()
+        console.log(rec)
+    }
+
+    return (
         <main>
+            <button onClick={() => test()}>ooo</button>
             Register
         </main>
     )
